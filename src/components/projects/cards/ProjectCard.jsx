@@ -1,21 +1,30 @@
 import placeholder from "../../../assets/img_placeholder.jpeg";
 
-export function ProjectCard() {
+export function ProjectCard({ title, desc, img, bullets }) {
   return (
-    <div style={{ outline: "1px solid red", maxWidth: "400px", width: "100%" }}>
-      <div style={{ outline: "2px solid yellow" }}>
-        <img src={placeholder} alt="placeholder" style={{ width: "100%", height: "auto", objectFit: "cover" }} />
+    <div style={{ maxWidth: "500px", width: "100%", boxShadow: "2px 2px 10px rgba(0, 0,0, 0.5)", borderRadius: "5px" }}>
+      <div style={{ height: "350px" }}>
+        <img src={img ? img : placeholder} alt={title ? title : "Placeholder"} style={{ width: "100%", maxHeight: "100%", objectFit: "cover" }} />
       </div>
-      <div>
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis dolores alias eligendi. Minus optio, deserunt omnis nisi odio rerum
-          quos, fuga velit cum esse delectus!
-        </p>
+      <div style={{ padding: "10px", height: "100%", minHeight: "500px" }}>
+        <h2>{title}</h2>
+        <p>{desc}</p>
+        <ul>
+          {bullets &&
+            bullets.map((bullet) => {
+              return <li>{bullet}</li>;
+            })}
+        </ul>
       </div>
-      <div style={{ color: "#fff", display: "flex", justifyContent: "space-around" }}>
-        <div>LIVE</div>
-        <div>GitHub</div>
+      <div style={{ color: "#fff", display: "flex", justifyContent: "space-around", paddingBottom: "20px" }}>
+        <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
+          <i class="fas fa-satellite-dish"></i>
+          <div>LIVE</div>
+        </div>
+        <div style={{ display: "flex", gap: "10px", alignItems: "baseline" }}>
+          <i class="fab fa-github"></i>
+          <div>GitHub</div>
+        </div>
       </div>
     </div>
   );

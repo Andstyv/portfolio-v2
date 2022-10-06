@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { projects } from "../../constants/projects";
 import { ProjectCard } from "./cards/ProjectCard";
 
 const StyledProjectsSection = styled.section`
@@ -18,6 +19,7 @@ const StyledProjectsContainer = styled.div`
   @media screen and (min-width: 1280px) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 `;
 
@@ -28,9 +30,18 @@ export function Projects() {
         <h2>Projects</h2>
       </div>
       <StyledProjectsContainer>
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projects &&
+          projects.map((project) => {
+            return (
+              <ProjectCard
+                title={project.title}
+                desc={project.description.head}
+                img={project.img}
+                bullets={project.description.bullets}
+                key={project.id}
+              />
+            );
+          })}
       </StyledProjectsContainer>
     </StyledProjectsSection>
   );

@@ -19,6 +19,12 @@ code {
 
 h1,
 h2,
-p {
+p,
+li,
+a {
   color: #fff;
+}
+
+p {
+  font-size: 18px;
 }
