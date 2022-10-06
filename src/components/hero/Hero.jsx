@@ -62,7 +62,7 @@ const StyledPointDown = styled.div`
 export function Hero() {
   return (
     <StyledHeroContainer className="body" style={{ width: "100%", minHeight: "100vh", maxWidth: "1320px" }} id="home">
-      <div style={{ color: "#fff", marginTop: "200px" }}>
+      <div style={{ marginTop: "200px" }}>
         <div style={{ display: "flex" }}>
           <StyledHeroH1>Hello world</StyledHeroH1>
         </div>
@@ -73,7 +73,7 @@ export function Hero() {
         </p>
       </div>
       <StyledPointDown>
-        <a href="#projects" style={{ textDecoration: "none", color: "#fff" }}>
+        <a href="#projects" id="down" style={{ textDecoration: "none" }}>
           <i class="far fa-hand-point-down"></i>
         </a>
       </StyledPointDown>
