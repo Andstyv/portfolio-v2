@@ -33,7 +33,7 @@ export function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto" style={{ fontSize: "24px" }}>
+          <Nav className="ms-auto" style={{ fontSize: "24px", gap: "20px" }}>
             <Nav.Link href="#home" style={{ color: "#fff" }}>
               Home
             </Nav.Link>
