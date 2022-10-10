@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import profile_img from "../../assets/Profilbilde_250.jpg";
+
 const StyledHeroContainer = styled.section`
   display: flex;
   flex-direction: column;
@@ -42,7 +44,7 @@ const StyledPointDown = styled.div`
   margin-bottom: 100px;
   font-size: 64px;
   animation: 
-  bounce 2s ease infinite;
+  bounce 5s ease infinite;
   a {
     cursor: pointer;
   }
@@ -59,22 +61,73 @@ const StyledPointDown = styled.div`
 }
 `;
 
+const StyledHeroInfoContainer = styled.div`
+  p {
+    font-family: Kanit, sans-serif;
+    font-size: 16px;
+  }
+  a,
+  span {
+    color: #f0885d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 1280px) {
+    p {
+      font-size: 24px;
+    }
+  }
+`;
+
+const StyledHeroImg = styled.img`
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 25px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 50px;
+    width: 250px;
+    margin-bottom: 50px;
+  }
+`;
+
+const StyledHeroDiv = styled.div`
+  margin-top: 100px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 200px;
+  }
+`;
+
 export function Hero() {
   return (
     <StyledHeroContainer className="body" style={{ width: "100%", minHeight: "100vh", maxWidth: "1320px" }} id="home">
-      <div style={{ marginTop: "200px" }}>
+      <StyledHeroDiv>
         <div style={{ display: "flex" }}>
           <StyledHeroH1>Hello world</StyledHeroH1>
         </div>
-        <p style={{ marginTop: "50px" }}>An aspiring Front End Developer</p>
-        <p style={{ maxWidth: "600px", margin: "0 auto", marginTop: "100px" }}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptatum eum minima magnam quisquam ducimus, veniam suscipit culpa
-          voluptas adipisci, qui fugiat! Doloribus, nam enim.
-        </p>
-      </div>
+        <StyledHeroImg src={profile_img} alt="Profile"></StyledHeroImg>
+        <StyledHeroInfoContainer style={{ fontFamily: "Kanit, sans-serif" }}>
+          <p style={{ marginTop: "25px" }}>
+            My name is <span>Anders Styve</span> - an aspiring <span>Frontend-developer.</span>
+          </p>
+          <p style={{ maxWidth: "600px", margin: "0 auto", marginTop: "50px" }}>
+            I'm currently employed by the superheroes at{" "}
+            <a href="https://www.bustbyute.no" aria-hidden="true">
+              BustByte
+            </a>
+            , and wrapping up my final year at at Noroff's Frontend-development studies.
+          </p>
+          <div style={{ marginTop: "50px" }}>
+            <p>Current tech stack:</p>
+            <p>HTML · CSS · JS · NODE JS · SCSS · BOOSTRAP · REST API · TS · REACT</p>
+          </div>
+        </StyledHeroInfoContainer>
+      </StyledHeroDiv>
       <StyledPointDown>
         <a href="#projects" id="down" style={{ textDecoration: "none" }}>
-          <i class="far fa-hand-point-down"></i>
+          <i class="fas fa-angle-double-down"></i>
         </a>
       </StyledPointDown>
     </StyledHeroContainer>

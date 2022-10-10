@@ -17,12 +17,12 @@ export function ProjectCard({ title, desc, img, bullets }) {
         <img src={img ? img : placeholder} alt={title ? title : "Placeholder"} style={{ width: "100%", maxHeight: "100%", objectFit: "cover" }} />
       </div>
       <div style={{ padding: "10px", height: "100%", minHeight: "700px" }}>
-        <h2 style={{ margin: "20px 0" }}>{title}</h2>
-        <p style={{ marginBottom: "20px" }}>{desc}</p>
+        <h2 style={{ margin: "20px 0", fontSize: "36px" }}>{title}</h2>
+        <p style={{ marginBottom: "20px", fontSize: "20px" }}>{desc}</p>
         <ul>
           {bullets &&
             bullets.map((bullet) => {
-              return <li style={{ margin: "10px 0" }}>{bullet}</li>;
+              return <li style={{ margin: "10px 0", fontSize: "20px" }}>{bullet}</li>;
             })}
         </ul>
       </div>

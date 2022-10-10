@@ -19,12 +19,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-#down {
-  color: #fff;
-}
-.light-mode {
-  background: #fff;
-  color: #000 !important;
+#down,
+#go-home {
+  color: #f0885d;
 }
 
 h1,
@@ -35,8 +32,21 @@ a {
   font-family: "Kanit", sans-serif;
 }
 
+h2 {
+  font-size: 48px;
+}
+
 p,
 li {
   font-family: "PT Serif", serif;
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.dark {
+  background-color: #282c34;
+  color: #fff;
+}
+.light {
+  background-color: #fff9f2;
+  color: #333;
 }
