@@ -18,13 +18,16 @@ export function Contact() {
           <p>If you have any questions about me, my work, or just want to get in touch, don't hesitate to reach out!</p>
           <StyledContactInnerDiv>
             <div>
-              <i className="fab fa-linkedin"></i>Anders Styve
+              <i className="fab fa-linkedin"></i>
+              <a href="www.linkedin.com/in/anders-styve-b2378314b">Anders Styve</a>
             </div>
             <div>
-              <i className="fab fa-github"></i>Andstyv
+              <i className="fab fa-github"></i>
+              <a href="https://github.com/Andstyv">Andstyv</a>
             </div>
             <div>
-              <i className="fas fa-envelope"></i>anders@bustbyte.no
+              <i className="fas fa-envelope"></i>
+              <a href="mailto:anders@bustbyte.no">anders@bustbyte.no</a>
             </div>
           </StyledContactInnerDiv>
         </StyledContactInner>

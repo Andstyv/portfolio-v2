@@ -42,6 +42,15 @@ export const StyledContactInnerDiv = styled.div`
     display: flex;
     align-items: baseline;
     gap: 20px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      :hover {
+        color: #f0885d;
+      }
+    }
   }
 `;
 
@@ -57,8 +66,13 @@ export const StyledGoHomeBtn = styled.div`
     font-size: 32px;
     padding-right: 20px;
 
+    :hover i {
+      font-size: 130%;
+    }
+
     i {
       margin-right: 20px;
+      transition: 0.2s;
     }
   }
 `;

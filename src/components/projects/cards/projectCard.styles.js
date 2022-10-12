@@ -1,14 +1,5 @@
 import styled from "styled-components";
 
-export const StyledProjectLink = styled.div`
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
-  font-size: 26px;
-  font-family: Kanit, sans-serif;
-  cursor: pointer;
-`;
-
 export const StyledProjectCardContainer = styled.div`
   max-width: 500px;
   width: 100%;
@@ -47,4 +38,21 @@ export const StyledProjectCardLinks = styled.div`
   display: flex;
   justify-content: space-around;
   padding-bottom: 20px;
+`;
+
+export const StyledProjectLinkDiv = styled.div`
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 26px;
+  font-family: Kanit, sans-serif;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    :hover {
+      color: #f0885d;
+    }
+  }
 `;

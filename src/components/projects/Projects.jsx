@@ -18,6 +18,7 @@ export function Projects() {
                 img={project.img}
                 bullets={project.description.bullets}
                 key={project.id}
+                links={project.links}
               />
             );
           })}

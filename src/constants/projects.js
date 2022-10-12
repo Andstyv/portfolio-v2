@@ -17,6 +17,10 @@ export const projects = [
         "An admin page where the admins can create new accommodations.",
       ],
     },
+    links: {
+      live: "https://resplendent-kitten-39101c.netlify.app/",
+      github: "https://github.com/Noroff-FEU-Assignments/project-exam-2-Andstyv",
+    },
   },
   {
     id: 2,
@@ -33,6 +37,10 @@ export const projects = [
         "Admin create/edit products pages, including image upload functionality.",
       ],
     },
+    links: {
+      live: null,
+      github: "https://github.com/Andstyv/Anders-Styve-Semester-Project_2",
+    },
   },
   {
     id: 3,
@@ -47,6 +55,10 @@ export const projects = [
         "Contact page containing a form with validation.",
         "Admin login page using JWT token connected with a WordPress plugin to authenticate the user.",
       ],
+    },
+    links: {
+      live: null,
+      github: "https://github.com/Noroff-FEU-Assignments/js-frameworks-course-assignment-Andstyv",
     },
   },
 ];

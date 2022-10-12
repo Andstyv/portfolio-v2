@@ -1,7 +1,7 @@
 import placeholder from "../../../assets/img_placeholder.jpeg";
-import { StyledProjectCardContainer, StyledProjectCardLinks, StyledProjectCardText, StyledProjectLink } from "./projectCard.styles";
+import { StyledProjectCardContainer, StyledProjectCardLinks, StyledProjectCardText, StyledProjectLinkDiv } from "./projectCard.styles";
 
-export function ProjectCard({ title, desc, img, bullets }) {
+export function ProjectCard({ title, desc, img, bullets, links }) {
   return (
     <StyledProjectCardContainer>
       <div style={{ height: "350px" }}>
@@ -18,14 +18,24 @@ export function ProjectCard({ title, desc, img, bullets }) {
         </ul>
       </StyledProjectCardText>
       <StyledProjectCardLinks>
-        <StyledProjectLink>
-          <i className="fas fa-satellite-dish"></i>
-          <div>LIVE</div>
-        </StyledProjectLink>
-        <StyledProjectLink>
-          <i className="fab fa-github"></i>
-          <div>GitHub</div>
-        </StyledProjectLink>
+        <div>
+          {links.live ? (
+            <StyledProjectLinkDiv>
+              <i className="fas fa-satellite-dish"></i> <a href={links.live}>Live</a>
+            </StyledProjectLinkDiv>
+          ) : (
+            <StyledProjectLinkDiv>
+              <i class="fas fa-exclamation-triangle"></i>
+              <div> Not live</div>
+            </StyledProjectLinkDiv>
+          )}
+        </div>
+        <div>
+          <StyledProjectLinkDiv>
+            <i className="fab fa-github"></i>
+            <a href={links.github}>GitHub</a>
+          </StyledProjectLinkDiv>
+        </div>
       </StyledProjectCardLinks>
     </StyledProjectCardContainer>
   );
