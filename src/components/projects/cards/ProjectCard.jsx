@@ -25,7 +25,7 @@ export function ProjectCard({ title, desc, img, bullets, links }) {
             </StyledProjectLinkDiv>
           ) : (
             <StyledProjectLinkDiv>
-              <i class="fas fa-exclamation-triangle"></i>
+              <i className="fas fa-exclamation-triangle"></i>
               <div> Not live</div>
             </StyledProjectLinkDiv>
           )}
