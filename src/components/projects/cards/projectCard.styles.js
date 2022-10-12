@@ -16,7 +16,7 @@ export const StyledProjectCardContainer = styled.div`
 export const StyledProjectCardText = styled.div`
   padding: 10px;
   height: 100%;
-  min-height: 700px;
+  min-height: 650px;
 
   h2 {
     margin: 20px 0;
@@ -25,12 +25,12 @@ export const StyledProjectCardText = styled.div`
 
   p {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   li {
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
