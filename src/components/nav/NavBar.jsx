@@ -25,6 +25,7 @@ export function NavBar() {
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
+
   return (
     <Navbar expand="lg" variant="dark" style={{ backgroundColor: "#282c34", color: "#fff" }} fixed="top" className={`Nav ${theme}`}>
       <Container>
@@ -44,7 +45,7 @@ export function NavBar() {
               Contact
             </Nav.Link>
             <StyledThemeTogglerBtn onClick={toggleTheme}>
-              {theme === "light" ? <i class="far fa-moon"></i> : <i class="fas fa-sun"></i>}
+              {theme === "light" ? <i className="far fa-moon"></i> : <i className="fas fa-sun"></i>}
             </StyledThemeTogglerBtn>
           </Nav>
         </Navbar.Collapse>

@@ -28,11 +28,11 @@ export function ProjectCard({ title, desc, img, bullets }) {
       </div>
       <div style={{ display: "flex", justifyContent: "space-around", paddingBottom: "20px" }}>
         <StyledProjectLink>
-          <i class="fas fa-satellite-dish"></i>
+          <i className="fas fa-satellite-dish"></i>
           <div>LIVE</div>
         </StyledProjectLink>
         <StyledProjectLink>
-          <i class="fab fa-github"></i>
+          <i className="fab fa-github"></i>
           <div>GitHub</div>
         </StyledProjectLink>
       </div>

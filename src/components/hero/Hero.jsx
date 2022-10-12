@@ -127,7 +127,7 @@ export function Hero() {
       </StyledHeroDiv>
       <StyledPointDown>
         <a href="#projects" id="down" style={{ textDecoration: "none" }}>
-          <i class="fas fa-angle-double-down"></i>
+          <i className="fas fa-angle-double-down"></i>
         </a>
       </StyledPointDown>
     </StyledHeroContainer>

@@ -27,13 +27,13 @@ export function Contact() {
             style={{ display: "flex", flexDirection: "column", margin: "0 auto", gap: "10px", width: "250px", fontSize: "24px", marginTop: "100px" }}
           >
             <div style={{ display: "flex", alignItems: "baseline", gap: "20px" }}>
-              <i class="fab fa-linkedin"></i>Anders Styve
+              <i className="fab fa-linkedin"></i>Anders Styve
             </div>
             <div style={{ display: "flex", alignItems: "baseline", gap: "20px" }}>
-              <i class="fab fa-github"></i>Andstyv
+              <i className="fab fa-github"></i>Andstyv
             </div>
             <div style={{ display: "flex", alignItems: "baseline", gap: "20px" }}>
-              <i class="fas fa-envelope"></i>anders@bustbyte.no
+              <i className="fas fa-envelope"></i>anders@bustbyte.no
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ export function Contact() {
       <div style={{ bottom: "20px", position: "absolute", display: "flex", width: "100%", justifyContent: "end" }}>
         <div style={{ color: "#fff" }}>
           <a href="#home" id="go-home" style={{ textDecoration: "none", fontSize: "32px", paddingRight: "20px" }}>
-            <i class="fas fa-angle-double-up" style={{ marginRight: "20px" }}></i>Home
+            <i className="fas fa-angle-double-up" style={{ marginRight: "20px" }}></i>Home
           </a>
         </div>
       </div>
