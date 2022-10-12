@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 const StyledThemeTogglerBtn = styled.button`
   border: none;
@@ -35,15 +36,21 @@ export function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" style={{ fontSize: "24px", gap: "20px" }}>
-            <Nav.Link href="#home" style={{ color: "#fff" }}>
-              Home
-            </Nav.Link>
-            <Nav.Link href="#projects" style={{ color: "#fff" }}>
-              Projects
-            </Nav.Link>
-            <Nav.Link href="#contact" style={{ color: "#fff" }}>
-              Contact
-            </Nav.Link>
+            <li className="nav-item">
+              <Link href="#home" to="home" activeClass="active" className="nav-link" spy={true} smooth={true} offset={-70} duration={100}>
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="#projects" to="projects" activeClass="active" className="nav-link" spy={true} smooth={true} offset={-70} duration={100}>
+                Projects
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link href="#contact" to="contact" activeClass="active" className="nav-link" spy={true} smooth={true} offset={-70} duration={100}>
+                Contact
+              </Link>
+            </li>
             <StyledThemeTogglerBtn onClick={toggleTheme}>
               {theme === "light" ? <i className="far fa-moon"></i> : <i className="fas fa-sun"></i>}
             </StyledThemeTogglerBtn>

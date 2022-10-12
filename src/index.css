@@ -50,3 +50,15 @@ li {
   background-color: #fff9f2;
   color: #333;
 }
+.nav-link {
+  border: none;
+}
+
+#basic-navbar-nav {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  #basic-navbar-nav {
+    margin-top: 0;
+  }
+}
