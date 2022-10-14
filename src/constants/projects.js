@@ -1,6 +1,6 @@
-import examImg from "../assets/exam2.png";
-import sp2Img from "../assets/SP2.png";
-import jsfImg from "../assets/js_frameworks.png";
+import examImg from "../assets/exam2.webp";
+import sp2Img from "../assets/SP2.webp";
+import jsfImg from "../assets/js_frameworks.webp";
 
 export const projects = [
   {
